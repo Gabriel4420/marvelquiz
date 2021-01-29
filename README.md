@@ -1,78 +1,124 @@
-# Example app with styled-components
+<h1 align="center">
+  &#x1F4F1; MARVEL QUIZ &#x1F4F1;
+</h1>
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<p align="center">
+   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Gabriel4420/marvelquiz">
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Gabriel4420/marvelquiz?logo=html">
 
-## Deploy your own
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/Gabriel4420/marvelquiz?color=green">
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+  <br>
+  
+  <a href="https://www.codacy.com/manual/Gabriel4420/marvelquiz?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gabriel4420/marvelquiz&amp;utm_campaign=Badge_Grade">
+    <img src="https://app.codacy.com/project/badge/Grade/6dd6b46abeb14e99935a2b9ac5c6ede2"/>
+  </a>
+  
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/last-commit/Gabriel4420/marvelquiz">
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
 
-## How to use
+  <a href="https://www.linkedin.com/in/gabriel-rodrigues-perez-2069b072/">
+    <img alt="Made by Gabriel" src="https://img.shields.io/badge/made%20by-Gabriel-%2304D361">
+  </a>
+</p>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+---
+
+<p align="center">
+  <img alt="Gif da Aplicação" src="src/assets/HomeApp.png" />
+  <img alt="Gif da Aplicação" src="src/assets/HomeApp2.png" />
+</p>
+
+---
+
+# Indice
+
+- :rocket: [Sobre o Projeto](#rocket-sobre-o-projeto)
+- 👨‍💻️ [Tecnogias utilizadas](#%EF%B8%8F-tecnogias-utilizadas)
+- 📦️ [Como utilizar o projeto](#%EF%B8%8F-como-utilizar-o-projeto)
+---
+
+## :rocket: Sobre o Projeto
+
+A proposta do projeto é o entendimento da tecnologia nextJS, que auxilia nas questões de integração front e backend, além de entender como funciona os components do react. 
+
+---
+
+## 👨‍💻️ Tecnogias utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+- [React](https://reactjs.org)
+
+
+### Dependências
+
+  - [Next](https://reactjs.org)
+  - [Styled-Components](https://styled-components.com)
+  - [Next](https://reactjs.org)
+  - [Next](https://reactjs.org)
+
+### Padronização de código
+
+  - [babel](https://babeljs.io)
+  - [Prettier](https://prettier.io/)
+  - :mouse: [Editor Config](https://editorconfig.org/)
+
+### IDE
+
+  - [Visual Studio Code](https://code.visualstudio.com/)
+
+---
+
+## 📦️ Como utilizar o projeto
+
+Para copiar o projeto, utilize os comandos:
 
 ```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+  # Clonar o repositório
+  ❯ git clone https://github.com/Gabriel4420/marvelquiz.git
+
+```
+Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn:
+
+**Utilizando flutter**
+
+```bash
+  # verificar as dependências
+  ❯ yarn dev
+  
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+**Utilizando npm**
 
-### Try it on CodeSandbox
+*PS: utilize o npm para atualizar as dependências, tome cuidado, pois dependendo da versão da dependência, pode ser que o projeto não funcione como o esperado.*
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+```bash
+  # Atualizar as dependências
+  ❯ npm install .
 
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
+  # Iniciar o projeto
+  ❯ npm run start
 ```
 
-**pages/index.js**
+---
 
-```javascript
-import StyledLink from '../components/StyledLink'
+<h4 align="center">
+  Feito com ❤️ por Gabriel Rodrigues 👋️ <a href="mailto:gabriel_rodrigues_perez@hotmail.com">Entre em contato!</a>
+</h4>
 
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
+<p align="center">
 
-</details>
+  <a href="https://www.linkedin.com/in/gabriel-rodrigues-perez-2069b072/">
+    <img alt="Gabriel Rodrigues Perez" src="https://img.shields.io/badge/LinkedIn-Gabriel_Rodrigues-0e76a8?style=flat&logoColor=white&logo=linkedin">
+  </a>
+  <a href="https://www.facebook.com/gabriel.rodrigues.perez">
+    <img alt="Gabriel Rodrigues Perez" src="https://img.shields.io/badge/Facebook-Gabriel_Rodrigues-1778F2?style=flat&logoColor=white&logo=facebook">
+  </a>
+  <a href="https://www.instagram.com/gabriel_rodrigues_perez/">
+    <img alt="Gabriel Rodrigues Perez" src="https://img.shields.io/badge/Instagram-@gabriel4420-833AB4?style=flat&logoColor=white&logo=instagram">
+  </a>
+  
+  
+</p>
