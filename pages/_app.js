@@ -32,6 +32,7 @@ const { theme } = db;
 // eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
+
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
