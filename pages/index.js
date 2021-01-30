@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
+import QuizLogo from '../src/components/QuizLogo';
 /* const BgImage = styled.div`
 
 background-image:url(${db.bg}); 
@@ -48,7 +50,12 @@ const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+    <Head>
+      <title>MarvelQuiz - Venha testar seus conhecimentos</title>
+    </Head>
+      
       <QuizContainer>
+        <QuizLogo />
        <Widget>
       <Widget.Header>
         <h1>Marvel Quiz</h1>
