@@ -82,7 +82,7 @@ Para copiar o projeto, utilize os comandos:
 ```
 Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn:
 
-**Utilizando flutter**
+**Utilizando yarn**
 
 ```bash
   # verificar as dependências
@@ -99,7 +99,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o yarn:
   ❯ npm install .
 
   # Iniciar o projeto
-  ❯ npm run start
+  ❯ npm run dev
 ```
 
 ---
