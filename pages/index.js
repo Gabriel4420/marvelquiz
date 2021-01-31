@@ -1,6 +1,8 @@
-import React from 'react';
+/* eslint-disable react/jsx-no-comment-textnodes */
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -41,6 +43,48 @@ const QuizContainer = styled.div`
   }
 `;
 
+const ControladorTexto = styled.input`
+  width:100%;
+  max-width:350px;
+  height:35px;
+  font-size:16px;
+  font-family:'Lato',Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  background-color:transparent;
+  outline:none;
+  border: 1px solid white;
+  padding:14px;
+  margin-bottom:10px;
+  color:white;
+  border-radius: 40px;
+  ::placeholder {
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+  }
+
+`;
+
+const OpenGame = styled.button`
+  width:100%;
+  max-width:375px;
+  height:35px;
+  color:white;
+  padding:14px;
+  border:1px solid ${({ theme }) => theme.colors.primary};
+  background-color:${({ theme }) => theme.colors.primary};
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  :hover {
+    border:1px solid ${({ theme }) => theme.colors.secondary};
+    background-color:${({ theme }) => theme.colors.secondary};
+  }
+
+`;
+
 /* function Title(props){
   return(
     <h1>{props.children}</h1>
@@ -48,6 +92,8 @@ const QuizContainer = styled.div`
 } */
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
@@ -76,9 +122,32 @@ export default function Home() {
             <h1>Marvel Quiz</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit="">
-              <input placeholder="Diz ai seu nome" />
-              <button type="submit"> Jogar [seuN]</button>
+            <p style={{ lineHeight: 1.5, fontWeight: 'bold', fontSize: '16px' }}>
+              Teste os seus conhecimentos sobre o universo da marvel e
+              divirta-se criando o seu quiz tambem
+            </p>
+            <form onSubmit={(infosDoEvento) => {
+              infosDoEvento.preventDefault();
+
+              // router manda para a proxima pagina
+              router.push(`/quiz?name=${name}`);
+
+              // eslint-disable-next-line no-console
+              console.log('fazendo uma submissão via react');
+            }}
+            >
+              <ControladorTexto
+                placeholder="Diz ai seu nome"
+                onChange={(infosEvent) => {
+                  // console.log(infosEvent.target.value);
+                  // name = infosEvent.target.value;
+                  setName(infosEvent.target.value);
+                }}
+              />
+              <OpenGame type="submit" disabled={name.length === 0}>
+                Bora&nbsp;lá&nbsp;
+                {name}
+              </OpenGame>
             </form>
           </Widget.Content>
 

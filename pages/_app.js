@@ -19,6 +19,19 @@ const GlobalStyle = createGlobalStyle`
   }
   html, body {
     min-height: 100vh;
+
+    
+  ::-webkit-scrollbar{
+      width:10px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background:brown;
+}
+
+::-webkit-scrollbar-track{
+    background:"#c9e2c9";
+}
   }
   #__next {
     flex: 1;
