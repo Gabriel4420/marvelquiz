@@ -20,6 +20,7 @@ function ResultWidget({ results }) {
         <p>
           Você acertou
           {' '}
+          {/* Reduce para verificar a quantidade de perguntas acertadas */}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
             if (isAcerto) {
@@ -27,6 +28,7 @@ function ResultWidget({ results }) {
             }
             return somatoriaAtual;
           }, 0)} */}
+
           {results.filter((x) => x).length}
           {' '}
           perguntas
@@ -38,7 +40,7 @@ function ResultWidget({ results }) {
               #
               {index + 1}
               {' '}
-              Resultado:
+              Resultado: &nbsp;
               {result === true
                 ? 'Acertou'
                 : 'Errou'}
