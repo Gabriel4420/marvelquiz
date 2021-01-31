@@ -1,5 +1,5 @@
 {
-  "bg": "https://c4.wallpaperflare.com/wallpaper/817/10/325/5bd061e0e0391-wallpaper-preview.jpg",
+  "bg": "https://www.wallpapertip.com/wmimgs/2-25251_avengers-wallpaper.jpg",
   "title": "Marvel Quiz",
   "description": "Teste os seus conhecimentos sobre o universo da marvel e divirta-se criando o seu quiz tambem",
   "questions": [
@@ -31,28 +31,28 @@
     },
 
     {
-      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
-      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
-      "description": "essa só quem tem disneyPlus vai saber hahaha ",
-      "answer": 2,
+      "image": "https://gifimage.net/wp-content/uploads/2018/11/gif-marvel-explosion-2.gif",
+      "title": "Em Capitão América guerra civil, quais são os aliados do capitão?",
+      "description": "essa ta facil hein",
+      "answer": 1,
       "alternatives": [
-         "Episodio 1",
-         "Episodio 2",
-         "Episodio 3",
-         "Episodio 4"
+         "Homem de Ferro, Gavião Arqueiro, Homem-Aranha,Viúva-Negra, Visão ",
+         "Gavião Arqueiro, Homem-Formiga, Falcão, Soldado Invernal,Feiticeira Scarlate",
+         "Motoqueiro Fantasma, Gavião Arqueiro,Viúva-Negra, Homem de Ferro, Homem-Aranha",
+         "Homem aranha, Visão, Feiticeira Scarlate,Pantera Negra,Thor, Gavião Arqueiro"
       ]
     },
 
     {
-      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
-      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
-      "description": "essa só quem tem disneyPlus vai saber hahaha ",
-      "answer": 2,
+      "image": "https://static.wixstatic.com/media/e82837_08b8edabb80e4241887e9e361b4a66ab~mv2.gif",
+      "title": "Qual foi a frase de efeito no final do filme gurra infinita",
+      "description": "Filme épico ",
+      "answer": 0,
       "alternatives": [
-         "Episodio 1",
-         "Episodio 2",
-         "Episodio 3",
-         "Episodio 4"
+         "& Im Iron Man/ E Eu sou o Homem de Ferro",
+         "Avengers Assembly/ Vingadores Avante",
+         "Lets go get this son of a bitch/ vamos dar um jeito nesse filho da puta",
+         "Im inevitable/ Eu sou Inevitável"
       ]
     },
 

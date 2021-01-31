@@ -98,7 +98,7 @@ export default function Home() {
                 }}
                 value={name}
               />
-              <OpenGame type="submit" disabled={name.length === 0}>
+              <OpenGame type="submit" disabled={name.length === 0 && true}>
                 Bora&nbsp;lá&nbsp;
                 {name}
               </OpenGame>
