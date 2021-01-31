@@ -22,6 +22,10 @@ const SVGWrapper = styled.svg`
     40%,80%{transform:rotate(10deg)}
   }
   @media (max-width:500px){
+    position: absolute;
+    right: -60px;
+    
+
     &:hover .octo-arm{
       animation:none
     }
