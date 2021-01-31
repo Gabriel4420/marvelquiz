@@ -23,7 +23,7 @@ const SVGWrapper = styled.svg`
   }
   @media (max-width:500px){
     position: absolute;
-    right: -60px;
+    right: -50px;
     
 
     &:hover .octo-arm{

@@ -1,19 +1,19 @@
 {
   "bg": "https://c4.wallpaperflare.com/wallpaper/817/10/325/5bd061e0e0391-wallpaper-preview.jpg",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "title": "Marvel Quiz",
+  "description": "Teste os seus conhecimentos sobre o universo da marvel e divirta-se criando o seu quiz tambem",
   "questions": [
     
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://pa1.narvii.com/6456/63d870e746b05ba6e1561c7e0ae3161f8a1f289a_hq.gif",
+      "title": "Qual o verdadeiro nome da tia do peter parker ?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Tia May",
+        "Tea Mei",
+        "Tia Mai",
+        "Tea Mey"
       ]
     },
 
