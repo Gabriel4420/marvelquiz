@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import db from '../db.json';
+import ListQuiz from '../src/components/ListQuiz';
 import Input from '../src/components/Input';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -111,7 +112,14 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
 
-            <p> Olha o que a galera ta fazendo</p>
+            <h1>Quizes da galera</h1>
+
+            <p>Jogar Quizes Semelhantes da Imersão:</p>
+
+            <ListQuiz
+              data={db.external}
+              status={name.length === 0 && 'disabled'}
+            />
           </Widget.Content>
         </Widget>
 
