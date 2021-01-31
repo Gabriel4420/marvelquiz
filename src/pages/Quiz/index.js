@@ -8,6 +8,7 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import GitHubCorner from '../../components/GitHubCorner';
 
 function ResultWidget({ results }) {
   return (
@@ -216,6 +217,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/Gabriel4420/marvelquiz" />
     </QuizBackground>
   );
 }

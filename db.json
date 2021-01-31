@@ -18,13 +18,54 @@
     },
 
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
+      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
+      "description": "essa só quem tem disneyPlus vai saber hahaha ",
+      "answer": 2,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Episodio 1",
+         "Episodio 2",
+         "Episodio 3",
+         "Episodio 4"
+      ]
+    },
+
+    {
+      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
+      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
+      "description": "essa só quem tem disneyPlus vai saber hahaha ",
+      "answer": 2,
+      "alternatives": [
+         "Episodio 1",
+         "Episodio 2",
+         "Episodio 3",
+         "Episodio 4"
+      ]
+    },
+
+    {
+      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
+      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
+      "description": "essa só quem tem disneyPlus vai saber hahaha ",
+      "answer": 2,
+      "alternatives": [
+         "Episodio 1",
+         "Episodio 2",
+         "Episodio 3",
+         "Episodio 4"
+      ]
+    },
+
+    {
+      "image": "https://i.pinimg.com/originals/ad/0e/af/ad0eaf64bb8e76a1afa17f440dee69b2.gif",
+      "title": "Em wanda vision, em qual episódio wanda encontra um helicopetoro de brinquedo ?",
+      "description": "essa só quem tem disneyPlus vai saber hahaha ",
+      "answer": 2,
+      "alternatives": [
+         "Episodio 1",
+         "Episodio 2",
+         "Episodio 3",
+         "Episodio 4"
       ]
     }
 
