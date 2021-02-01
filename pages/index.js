@@ -73,10 +73,10 @@ export default function Home() {
         <QuizLogo />
         <Widget
           as={motion.section}
-          transition={{ delay: 1.2, duration: 1.5 }}
+          transition={{ delay: 0.5, duration: 1.0 }}
           variants={{
-            show: { opacity: 1 },
-            hidden: { opacity: 0 },
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
           }}
           initial="hidden"
           animate="show"
@@ -118,6 +118,7 @@ export default function Home() {
         </Widget>
         <Widget
           as={motion.section}
+          transition={{ delay: 1.2, duration: 1.0 }}
           variants={{
             show: { opacity: 1 },
             hidden: { opacity: 0 },
