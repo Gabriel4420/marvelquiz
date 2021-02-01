@@ -41,13 +41,12 @@ function ResultWidget({ results }) {
           {results.map((result, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <li key={`result__${index}`}>
-              #
               {index + 1}
               {' '}
-              Resultado: &nbsp;
+              ° Pergunta:
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? <h4 style={{ lineHeight: '0.3px', marginTop: '-10px', marginLeft: '100px' }}>&#x2714;</h4>
+                : <h4 style={{ lineHeight: '0.3px', marginTop: '-10px', marginLeft: '98px' }}>&#x26D4;</h4>}
             </li>
           ))}
         </ul>
@@ -156,8 +155,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <p style={{ marginLeft: '99px', fontWeight: 'bold', fontSize: '18px' }}>Você acertou!</p>}
+          {isQuestionSubmited && !isCorrect && <p style={{ marginLeft: '99px', fontWeight: 'bold', fontSize: '18px' }}>Você errou!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -194,7 +193,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 2000);
+    }, 1 * 1000);
   // nasce === didMount
   }, []);
 
