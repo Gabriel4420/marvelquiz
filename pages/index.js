@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import db from '../db.json';
 import ListQuiz from '../src/components/ListQuiz';
@@ -70,7 +71,16 @@ export default function Home() {
 
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 1.2, duration: 1.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Marvel Quiz</h1>
           </Widget.Header>
@@ -106,7 +116,15 @@ export default function Home() {
           </Widget.Content>
 
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>Quizes da galera</h1>
           </Widget.Header>
